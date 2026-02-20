@@ -76,9 +76,9 @@ class CityMallMission extends SurvivorMissions
 		TStringArray SurvivorNames = {"Tamarova", "Lorzinski", "Blosmanova", "Gabarin", "Sloskova", "Belzin", "Homyuk", "Trademzyuk", "Jankarova"};
 		SurvivorName = SurvivorNames.GetRandomElement();
 		// Set mission messages for primary mission
-		m_MissionMessage1 = "Ms. " + SurvivorName + ", a grade school teacher, told me that she brought some of her students to safety from their infected families. I promised her that I would help get food and medical supplies for the kids.";
-		m_MissionMessage2 = "Yesterday, I found out that the supermarket in\n** " + m_MissionLocation + " **\nwas barricaded and probably still has some food inside. But there were too many infected around, so I wasn't able to check the supermarket.";
-		m_MissionMessage3 = "She urgently needs the following items from the market:\n- " + ReqFoodAmount + " cans of food\n- " + ReqMedAmount + " packets of antibiotics\nPlease help me support Ms. " + SurvivorName + " with these essential supplies for the children.";
+		m_MissionMessage1 = "" + SurvivorName + " 女士是一名小学老师。她告诉我，她把一些学生从感染者家人身边带到了安全地带。我答应她会帮孩子们弄到食物和医疗物资。";
+		m_MissionMessage2 = "昨天我发现，\n** " + m_MissionLocation + " **\n的超市被封锁了，里面可能还有食物。但周围感染者太多，我没法进去查看。";
+		m_MissionMessage3 = "她急需以下物资：\n- " + ReqFoodAmount + " 罐食物\n- " + ReqMedAmount + " 包抗生素\n请帮我把这些必需品送给 " + SurvivorName + " 女士，用来照顾孩子们。";
 
 		//Spawnpoints for antibiotics in store (cash desk)
 		MedSpawns.Insert("-5.392 -0.686 1.087");
@@ -743,9 +743,9 @@ class CityMallMission extends SurvivorMissions
 	{	//When player enters mission target zone at primary mission
 
 		//Set messages for secondary mission
-		m_MissionMessage1 = "Allright you have found the supplies, try to get out there safely. Ms. "+ SurvivorName +" never told me her whereabouts because she wants to be absolutely secure from bandits and scavengers.";
-		m_MissionMessage2 = "I think the best will be if you could deposit the supplies in the quiet room of the small\n** "+ m_MissionSecondaryLoc +" ** police station and put all in the orange backpack i left there. I will check it in one hour and try to contact her on radio.";
-		m_MissionMessage3 = "I have some things for you at the small police station. Be careful, there might be bandits around "+ m_MissionSecondaryLoc +". They could intercepted our little radio talk here. Good luck!";
+		m_MissionMessage1 = "很好，你已经找到补给了，尽量安全撤离。"+ SurvivorName +" 女士从不告诉我她的具体位置，因为她必须彻底避开匪徒和拾荒者。";
+		m_MissionMessage2 = "我觉得最好的办法是把补给放到\n** "+ m_MissionSecondaryLoc +" ** 小警局的安静室里，全部装进我放在那里的橙色背包。我会在一小时后去查看，并尝试用无线电联系她。";
+		m_MissionMessage3 = "小警局里我给你留了些东西。小心，"+ m_MissionSecondaryLoc +" 附近可能有匪徒，他们可能截听了我们的无线电通话。祝你好运！";
 		
 		//init Messenger for new messages
 		m_MsgNum = 1;					//skip msg 0, begin with msg 1

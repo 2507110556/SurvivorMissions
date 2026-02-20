@@ -72,9 +72,9 @@ class PsilosMission extends SurvivorMissions
 		SurvivorExtName = SurvivorExtNames.GetRandomElement();
 		
 		//Set mission messages for primary mission
-		m_MissionMessage1 = SurvivorName + ", a survivor I met a few days ago, told me that there are places around here with numerous occurrences of a special mushroom. Its classification name is 'Psilocybe semilanceata'.";
-		m_MissionMessage2 = "At the moment, I am experimenting with the psychoactive ingredient psilocybin on infected wild animals. The animals begin to show unusual behavior about 30 minutes after oral intake. I can't say much yet, but for my experiments I need more mushrooms.";
-		m_MissionMessage3 = SurvivorName + " said he found some of them\n** " + m_MissionLocationDir + " of " + m_MissionLocation + " **\nI need " + ReqShroomsCount + " more pieces. The mushrooms are very small, so I recommend using a mushroom guide to help identify possible occurrences!";
+		m_MissionMessage1 = SurvivorName + "，是我几天前遇到的一名幸存者。他告诉我这附近有很多地方会长一种特殊蘑菇，学名叫 'Psilocybe semilanceata'。";
+		m_MissionMessage2 = "目前我正在用致幻成分裸盖菇素在受感染野生动物身上做实验。这些动物在口服约30分钟后会出现异常行为。现在我还不能透露太多，但实验需要更多蘑菇。";
+		m_MissionMessage3 = SurvivorName + " 说他在\n** " + m_MissionLocationDir + " 的 " + m_MissionLocation + " **\n找到过一些。我还需要 " + ReqShroomsCount + " 个。这种蘑菇很小，建议你带上蘑菇图鉴来辨认！";
 
 		//Spawnpoints for MissionObject for secondary mission
 		Spawnpoints.Insert("-8.2598 -5.3138 -3.3914");
@@ -565,9 +565,9 @@ class PsilosMission extends SurvivorMissions
 	override void ExtendMission()
 	{
 		//Set new mission messages
-		m_MissionMessage1 = "Allright survivor, if you have found "+ ReqShroomsCount +" of these mushrooms bring them to the following place. Hold on a second...";
-		m_MissionMessage2 = "Bring them to the ** "+ m_MissionSecondaryLoc +" Police Station **\n"+ SurvivorExtName +" said she could extract the active substance for me. She has left a small protector case on the desk in the office.";
-		m_MissionMessage3 = "Put all you have found in there. Be carefull, there might be bandits around which could intercepted our little radio talk here. Good luck!";
+		m_MissionMessage1 = "很好，幸存者，如果你已经找到 "+ ReqShroomsCount +" 个这种蘑菇，把它们带到下面这个地点。稍等一下……";
+		m_MissionMessage2 = "把它们送到 ** "+ m_MissionSecondaryLoc +" 警察局 **\n"+ SurvivorExtName +" 说她可以帮我提取有效成分。她在办公室桌上留了一个小防护箱。";
+		m_MissionMessage3 = "把你找到的都放进去。小心，附近可能有匪徒，他们可能截听了我们的无线电。祝你好运！";
 		
 		//init Messenger for new messages
 		m_MsgNum = 1;					//skip msg 0, begin with msg 1
