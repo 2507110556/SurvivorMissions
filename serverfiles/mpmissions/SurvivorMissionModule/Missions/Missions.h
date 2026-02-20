@@ -1,3 +1,4 @@
+#include "$CurrentDir:\\mpmissions\\SurvivorEvents.chernarusplus\\SurvivorMissionModule\\Missions\\RewardPoolHelper.c"
 #include "$CurrentDir:\\mpmissions\\SurvivorEvents.chernarusplus\\SurvivorMissionModule\\Missions\\Apartment.c"
 #include "$CurrentDir:\\mpmissions\\SurvivorEvents.chernarusplus\\SurvivorMissionModule\\Missions\\BearHunt.c"
 #include "$CurrentDir:\\mpmissions\\SurvivorEvents.chernarusplus\\SurvivorMissionModule\\Missions\\Camp.c"
