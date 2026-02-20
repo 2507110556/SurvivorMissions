@@ -83,9 +83,9 @@ class CaptureFlagMission extends SurvivorMissions
 		}
 */				
 		//Set mission messages
-		m_MissionMessage1 = "Yesterday, one of our defense positions was taken over by the Bohemian Bandits. The firefight between the bandits and a few survivors drew in a large number of infected.";
-		m_MissionMessage2 = "Locate the defense position and capture the base flag for us. It will take at least " + (CaptureTime / 60).ToString() + " minutes to lower the bandits' flag and raise our own.";
-		m_MissionMessage3 = "The defense position is located on the ** " + m_MissionLocationDir + " side of " + m_MissionLocation + " **\nBe careful — there are alot of infected and the bandits might be still around there!";
+		m_MissionMessage1 = "昨天，我们一个防御据点被波西米亚匪徒占领了。匪徒和几名幸存者交火后，引来了大量感染者。";
+		m_MissionMessage2 = "找到那个防御据点，并为我们夺取基地旗帜。降下匪徒旗帜再升起我们的旗帜，至少需要 " + (CaptureTime / 60).ToString() + " 分钟。";
+		m_MissionMessage3 = "防御据点位于 ** " + m_MissionLocationDir + " 的 " + m_MissionLocation + " 一侧 **\n小心——那里有很多感染者，匪徒也可能还在附近！";
 
 		//Rewards spawns
 		Spawnpoints.Insert("-0.422 0.453 0");	//table 1
@@ -680,9 +680,9 @@ class CaptureFlagMission extends SurvivorMissions
 		m_MissionExtended = false;
 		
 		//Set new mission messages
-		m_MissionMessage1 = "Allright survivor, it seems you have found the defence position "+ m_MissionLocationDir +" of "+ m_MissionLocation +". There are probably alot of infected, try to get in there safely and hold the position.";
-		m_MissionMessage2 = "Be aware, Bohemian Bandits could counter attack the defence position. If you could capture it completely, there will be some interesting equipment for you probably.";
-		m_MissionMessage3 = "The flag was already captured by "+ FlagCaptureProgress +"%. Hold on, you will make it.";
+		m_MissionMessage1 = "很好，幸存者，看起来你已经找到 "+ m_MissionLocationDir +" 的 "+ m_MissionLocation +" 防御点了。那里可能有很多感染者，尽量安全进入并守住阵地。";
+		m_MissionMessage2 = "注意，波西米亚匪徒可能会反扑防御点。如果你能完全占领它，可能会拿到一些不错的装备。";
+		m_MissionMessage3 = "旗帜已被夺取 "+ FlagCaptureProgress +"%。坚持住，你可以做到。";
 		
 		//init Messenger for new messages
 		m_MsgNum = 1;					//skip msg 0, begin with msg 1
@@ -797,7 +797,7 @@ class CaptureFlagMission extends SurvivorMissions
 			
 			//refresh message 3 (capture progress)
 			if ( !m_MissionExtended )
-			m_MissionMessage3 = "The flag was already captured by "+ FlagCaptureProgress +"%. Hold the position, you will make it.";
+			m_MissionMessage3 = "旗帜已被夺取 "+ FlagCaptureProgress +"%。守住阵地，你可以做到。";
 		}
 		
 		//refuel fireplaces (!does only work when fireplaces are element 2 and 4 in m_MissionObjects array!)

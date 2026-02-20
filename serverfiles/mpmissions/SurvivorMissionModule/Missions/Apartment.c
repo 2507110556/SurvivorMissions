@@ -63,9 +63,9 @@ class ApartmentMission extends SurvivorMissions
 		SurvivorName = SurvivorNames.GetRandomElement();
 						
 		// Mission messages
-		m_MissionMessage1 = SurvivorName + " was one of my best students. I used to talk to him over the radio, but I've since lost contact.";
-		m_MissionMessage2 = "He once told me that he had hidden a sea chest with valuable equipment somewhere in the apartments. A few days ago, he barricaded the entire building against the infected.";
-		m_MissionMessage3 = "He lived in one of the apartments\n** " + m_MissionLocationDir + " of " + m_MissionLocation + " **\nPlease check if " + SurvivorName + " is still alive. If not, take his supplies to help you survive.";
+		m_MissionMessage1 = SurvivorName + " 曾是我最优秀的学生之一。我以前经常通过无线电和他联系，但后来失联了。";
+		m_MissionMessage2 = "他曾告诉我，他在公寓区某处藏了一个装有贵重装备的海箱。几天前，他还把整栋楼都封锁起来，以防感染者进入。";
+		m_MissionMessage3 = "他住在\n** " + m_MissionLocationDir + " 的 " + m_MissionLocation + " **\n请你去确认一下 " + SurvivorName + " 是否还活着。如果他不在了，就把他的补给带走，帮助你自己活下去。";
 
 				
 		//Mission object spawnpoints in mission building	

@@ -72,9 +72,9 @@ class GanjaMission extends SurvivorMissions
 		SurvivorName = SurvivorNames.GetRandomElement();
 		
 		//Set mission messages for primary mission
-		m_MissionMessage1 = SurvivorName + ", a guy who once worked for me, told me that he crossbred a special cannabis strain from various 'Cannabis ruderalis' plants. I need it for my experiments on the infected. He said he fertilized the mother plants with shredded infected remains.";
-		m_MissionMessage2 = "I think he meant some kind of fermented brew made with water, infected ash, and pieces of flesh mixed in a kitchen blender. The impact on the plants' growth and bloom was massive. It also seems to contain a substance other than the native cannabinoids. I want to extract this substance to see how it affects the infected.";
-		m_MissionMessage3 = SurvivorName + " hid his herbs in a garage at\n** " + m_MissionLocation + " **\nHe almost certainly locked the garage doors, so try to use a lockpick — or shoot them open if you don't have one.";
+		m_MissionMessage1 = SurvivorName + "，一个曾为我工作的人告诉我，他用多种 'Cannabis ruderalis' 培育出了一种特殊大麻品种。我做感染者实验需要它。他说他用感染者残骸碎末给母株施肥。";
+		m_MissionMessage2 = "我想他指的是一种发酵液：把水、感染者灰烬和肉块放进搅拌机混合。它对植物生长和开花的影响非常大，而且似乎含有不同于天然大麻素的成分。我想提取这种物质，看看它对感染者有什么影响。";
+		m_MissionMessage3 = SurvivorName + " 把草药藏在\n** " + m_MissionLocation + " **\n的一间车库里。他几乎肯定把车库门锁上了，尽量用撬锁器打开；如果没有，就开枪破门。";
 
 		//Spawnpoints for MissionCar in Garage 
 		GarageCarSpawns.Insert("5.055 -1.504 -2.064"); 	//left garage
@@ -648,9 +648,9 @@ class GanjaMission extends SurvivorMissions
 	{	//When player enters mission target zone at primary mission
 		
 		//Set messages for secondary mission
-		m_MissionMessage1 = "Allright, so you have found the car. "+ SurvivorName +" has probably drained all fuel and oil so prepare the car before that long trip. Check if the dried Cannabis is anywhere in the garages there and take the bag and put all 25 pieces in it.";
-		m_MissionMessage2 = "Drive to the  ** "+ m_MissionSecondaryLoc +" Gas Station **\nand bring the Ganjabag to cash desk. "+ SurvivorName +"'s ganja has the highest priority. Please don't steal or smoke any of it by your own because it could be very dangerous.";
-		m_MissionMessage3 = "I have some things for you at the gas station. Be carefull, there might be bandits on the way to "+ m_MissionSecondaryLoc +". They could intercepted our little radio talk here. Good luck and drive carefully!";
+		m_MissionMessage1 = "很好，你找到车了。"+ SurvivorName +" 很可能已经把燃油和机油放空了，长途前先把车整备好。检查那些车库里有没有干燥大麻，找到后放进袋子里，凑齐 25 份。";
+		m_MissionMessage2 = "开车前往 ** "+ m_MissionSecondaryLoc +" 加油站 **\n把大麻袋带到收银台。"+ SurvivorName +" 的货优先级最高。请不要私吞或吸食，可能非常危险。";
+		m_MissionMessage3 = "我在加油站给你留了些东西。小心，去 "+ m_MissionSecondaryLoc +" 的路上可能有匪徒，他们可能截听了我们的无线电。祝你好运，开车注意安全！";
 		
 		//init Messenger for new messages
 		m_MsgNum = 1;					//skip msg 0, begin with msg 1

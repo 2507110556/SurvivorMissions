@@ -69,9 +69,9 @@ class BearHuntMission extends SurvivorMissions
 		SurvivorName = SurvivorNames.GetRandomElement();
 		
 		//Set mission messages for primary mission
-		m_MissionMessage1 = "A survivor recently told me that a bear attacked my friend " + SurvivorName + " and killed two other survivors. They had gone to the wrong location while trying to hunt deer in the forest of " + m_MissionLocation + ".";
-		m_MissionMessage2 = "I still can't believe it. " + SurvivorName + " was one of the best hunters around here. Every week he brought fresh meat to the hidden camp to feed the survivors. He was never selfish and always tried to help out in the camp.";
-		m_MissionMessage3 = "The bear was last seen in the forest near\n** " + m_MissionLocationDir + " of " + m_MissionLocation + " **\nI need you to kill this animal and take its pelt. This isn't about revenge — we need the pelt to make winter clothing for the children. Be careful!";
+		m_MissionMessage1 = "最近有位幸存者告诉我，一只熊袭击了我的朋友 " + SurvivorName + "，还杀死了另外两名幸存者。他们在 " + m_MissionLocation + " 的森林里猎鹿时走错了地方。";
+		m_MissionMessage2 = "我到现在都不敢相信。" + SurvivorName + " 是这里最出色的猎人之一。每周他都会把新鲜肉带到隐蔽营地，给幸存者们充饥。他从不自私，总是尽力帮助营地里的人。";
+		m_MissionMessage3 = "最后一次看到那只熊是在\n** " + m_MissionLocationDir + " 的 " + m_MissionLocation + " 附近森林 **\n我需要你杀掉这头野兽并带回它的毛皮。这不是为了复仇——我们需要毛皮给孩子们做过冬衣物。小心！";
 
 		//Spawnpoint for MissionObject for secondary mission
 		Spawnpoints.Insert("-18.40 2.19 18.57");
@@ -497,9 +497,9 @@ class BearHuntMission extends SurvivorMissions
 	override void ExtendMission()
 	{
 		//Set new mission messages
-		m_MissionMessage1 = "Allright survivor, you have found the bear location. Try to safely engage and kill him by aiming at his head or heart. A bear is a strong animal, so it will take some shots to get him down.";
-		m_MissionMessage2 = "Take out your knife and eviscerate him. Bring the pelt and the meat to the\n** "+ m_MissionSecondaryLoc +" School laboratory class room **\n(left wing, top floor) because I want to examine the bear meat. I left a red mountain bag on the labor desk.";
-		m_MissionMessage3 = "Put atleast "+ ReqMeatAmount +" bear steaks and the pelt in there. Be carefull, there might be bandits around which could intercepted our little radio talk here. Good luck!";
+		m_MissionMessage1 = "很好，幸存者，你已经找到熊的位置了。尽量安全接敌，瞄准头部或心脏击杀它。熊是非常强壮的动物，可能需要多开几枪才能放倒。";
+		m_MissionMessage2 = "拿出你的刀把它解剖。把毛皮和熊肉带到\n** "+ m_MissionSecondaryLoc +" 学校实验教室 **\n（左翼顶层），因为我要检查熊肉。我在实验台上留了一个红色登山包。";
+		m_MissionMessage3 = "至少放入 "+ ReqMeatAmount +" 份熊排和毛皮。小心，附近可能有拦路匪徒，他们可能截获了我们的无线电通话。祝你好运！";
 		
 		//init Messenger for new messages
 		m_MsgNum = 1;					//skip msg 0, begin with msg 1
